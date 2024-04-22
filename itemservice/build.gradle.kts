@@ -9,7 +9,7 @@ plugins {
 val springCloudVersion by extra("2023.0.1")
 
 group = "org.msa"
-version = "0.0.1-SNAPSHOT"
+version = "1.0"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -22,16 +22,16 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+   // implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-validation")
-    implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
-    implementation("org.springframework.cloud:spring-cloud-starter")
+    //implementation("org.springframework.boot:spring-boot-starter-validation")
+   // implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
+  //  implementation("org.springframework.cloud:spring-cloud-starter")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     "developmentOnly"("org.springframework.boot:spring-boot-devtools")
-    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+    //runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 
 
 }
