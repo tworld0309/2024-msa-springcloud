@@ -1,11 +1,12 @@
 HELP.md
 .gradle
 build/
-logs/
-log/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+log/
+logs/
+.run/
 
 ### STS ###
 .apt_generated
@@ -38,5 +39,9 @@ out/
 ### VS Code ###
 .vscode/
 
-### Kotlin ###
-.kotlin
+### environment ###
+.env
+data/*
+
+### Docker ###
+docker-compose.yml
