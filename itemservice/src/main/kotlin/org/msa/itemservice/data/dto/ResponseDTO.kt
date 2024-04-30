@@ -4,7 +4,7 @@ data class ResponseDTO(
     var code: String? = null,
     var message: String? = null
 ) {
-    class ResponseDTOBuilder {
+    class Builder {
         private var code: String? = null
         private var message: String? = null
 
@@ -12,5 +12,9 @@ data class ResponseDTO(
         fun message(message: String?) = apply { this.message = message }
 
         fun build() = ResponseDTO(code, message)
+    }
+
+    companion object {
+        fun builder() = Builder()
     }
 }

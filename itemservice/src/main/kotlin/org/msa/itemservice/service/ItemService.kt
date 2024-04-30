@@ -29,6 +29,7 @@ class ItemService (private val itemRepository: ItemRepository) {
             .regDts(date)
             .updDts(date)
             .build()
+        log.debug("item : {}", item);
         itemRepository.save(item)
     }
 }
