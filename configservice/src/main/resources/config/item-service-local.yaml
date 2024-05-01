@@ -31,3 +31,7 @@ springdoc:
     path: /swagger-ui.html
     disable-swagger-default-url: true
     display-query-params-without-oauth2: true
+
+token:
+  expiration_time: 86400000
+  secret: SECU100
