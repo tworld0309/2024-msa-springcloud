@@ -5,7 +5,7 @@ logging:
     max-history: 10
   level:
     root: info
-    org.msa.eurekaserver: debug
+    org.msa.eureka: debug
 
 spring:
   application:
