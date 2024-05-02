@@ -1,7 +1,6 @@
 package org.msa.item.exception
 
 import jakarta.servlet.http.HttpServletRequest
-import org.json.JSONException
 import org.msa.itemservice.data.dto.ResponseDTO
 import org.msa.itemservice.exception.ApiException
 import org.springframework.http.ResponseEntity
@@ -20,9 +19,7 @@ class ApiExceptionHandler {
     }
 
     @ExceptionHandler(MethodArgumentNotValidException::class)
-    @Throws(
-        JSONException::class
-    )
+    @Throws(Exception::class)
     fun handleValidationExceptions(ex: MethodArgumentNotValidException): ResponseEntity<*> {
         val bindingResult = ex.bindingResult
         val builder = StringBuilder()

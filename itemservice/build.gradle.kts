@@ -32,12 +32,12 @@ dependencies {
     implementation(group = "org.mariadb.jdbc", name = "mariadb-java-client", version = "3.1.2")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-validation")
-    implementation(group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version = "2.0.2")
+    implementation("org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version = "2.0.2")
 
     implementation("org.springframework.boot:spring-boot-starter-actuator")
-    //implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
-    implementation("org.json:json:20231013")
+    //implementation("org.json:json:20231013")
     //implementation(group = "io.micrometer", name = "micrometer-tracing-bridge-brave", version = "1.1.1")
     //implementation(group = "io.zipkin.reporter2", name = "zipkin-reporter-brave", version = "2.16.3")
     //implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
@@ -51,7 +51,7 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")// 사용 중인 버전으로 변경
+    //implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")// 사용 중인 버전으로 변경
 
     // spring cloud config
     implementation("org.springframework.cloud:spring-cloud-starter-config")
