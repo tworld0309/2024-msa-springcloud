@@ -24,7 +24,7 @@ services:
       # 외부 폴더 : 도커 내부폴더
 
     volumes:
-      - .:/data/mariadb
+      - ./database/mariadb:/data/mariadb
 
 
   # #서비스 명
